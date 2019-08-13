@@ -516,9 +516,7 @@ data temp1;
 			Amiodarone=1;
 		else
 			Amiodarone=0;
-		*1=taking Height and 0=not taking 
-
-		Height;
+		*1=taking amidarone and 0=not taking amiodarone
 		*dosage formula (no changes);
 
 		*Dosing Formula if Genes Unknown;
