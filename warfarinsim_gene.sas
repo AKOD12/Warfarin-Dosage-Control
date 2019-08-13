@@ -521,28 +521,28 @@ data temp1;
 
 		*Dosing Formula if Genes Unknown;
 		nogeneweeklydosage=((5.6044-
-							0.2614*Age+
-							0.0087*Height+
-							0.0128*Weight-
-							0.5503*Amiodarone-
-							0.4854-
-							0.2188-
-							0.2760*Race)**2);
+		0.2614*Age+
+		0.0087*Height+
+		0.0128*Weight-
+		0.5503*Amiodarone-
+		0.4854-
+		0.2188-
+		0.2760*Race)**2);
 
 		*Dosing Formula if Genes Known;
 		geneweeklydosage=((5.6044-
-							0.2614*Age+
-							0.0087*Height+
-							0.0128*Weight-
-							0.5503*Amiodarone-
-							0.8677*VKORCAG-
-							1.6974*VKORCAA-
-							0.5211*x26-
-							0.9357*x23-
-							1.0616*x12-
-							1.9206*x13-
-							2.3312*x2-
-							0.2760*Race)**2);
+		0.2614*Age+
+		0.0087*Height+
+		0.0128*Weight-
+		0.5503*Amiodarone-
+		0.8677*VKORCAG-
+		1.6974*VKORCAA-
+		0.5211*x26-
+		0.9357*x23-
+		1.0616*x12-
+		1.9206*x13-
+		2.3312*x2-
+		0.2760*Race)**2);
 
 		*Dosing Formula if AA Genes Known;
 		AAgeneweeklydosage = geneweeklydosage;
