@@ -3,12 +3,13 @@ options nodate formdlim="-";
 
 data temp1;
 	/****Static Variables****/
-%Let nsim=1;
+%Let nsim=10000;
 	*number of simulations;
 	%Let nstudy=50000;
 	*study population;
 	%let percentAMIO=0.0588;
 	*percent of people taking Height;
+	
 	*African-Americans;
 	%Let meanAAage=6.2;
 	*mean age of african-americans in decades;
@@ -24,6 +25,7 @@ data temp1;
 	*mean height of african-americans in centimeters;
 	%Let sdAAheight=10.5;
 	*standard deviation of african-americans in height;
+	
 	*Europeans;
 	%Let meanEUROage=7.8;
 	*mean age of europeans;
@@ -39,6 +41,7 @@ data temp1;
 	*mean height of europeans in centimeters;
 	%Let sdEUROheight=7.5;
 	*standard deviation of europeans in height;
+	
 	*Afrcian-American CYP2C9 Diplotype Frequencies;
 	%Let AAprob6homo=0.0001;
 	%Let AAprob3homo=0.0001;
@@ -68,6 +71,7 @@ data temp1;
 	%Let AAprob1and2=0.0398;
 	%Let AAprob1and8=0.1151;
 	%Let AAprob1homo=0.7469;
+	
 	*European CYP2C9 Diplotype Frequencies;
 	%Let EUROprob6homo=0.0000;
 	%Let EUROprob5homo=0.0000;
